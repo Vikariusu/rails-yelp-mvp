@@ -1,3 +1,8 @@
-<h2>Add a new restaurant!</h2>
+<div class="text-center">
+  <h2>Add a new restaurant!</h2>
+  <%= link_to("Go back to restaurants", restaurants_path, method: :get) %>
+</div>
 
-<%= render "form_restaurant" %>
+<div style="background-color: #e0e0e0">
+  <%= render "form_restaurant" %>
+</div>

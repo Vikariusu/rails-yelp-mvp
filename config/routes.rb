@@ -5,10 +5,6 @@ Rails.application.routes.draw do
     resources :reviews, only: [:new, :create, :destroy]
   end
 
-
-
-
-
   # # a visitor can display restaurants
   # get "restaurants", to: "restaurants#index"
   # # a visitor can create a new restaurant

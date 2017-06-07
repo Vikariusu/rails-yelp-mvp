@@ -1,15 +1,25 @@
-<%= form_for(@restaurant) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<div class="col-md-4 col-md-offset-4">
+  <%= form_for(@restaurant) do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
 
-  <%= f.label :address %>
-  <%= f.text_field :address %>
+    <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </div>
 
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number %>
+    <div class="form-group">
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number %>
+    </div>
 
-  <%= f.label :category %>
-  <%= f.text_field :category %>
+    <div class="form-group">
+      <%= f.label :category %>
+      <%= f.text_field :category %>
+    </div>
 
-  <%= f.submit class: "btn btn-primary"%>
-<% end %>
+    <%= f.submit class: "btn btn-primary"%>
+  <% end %>
+</div>
